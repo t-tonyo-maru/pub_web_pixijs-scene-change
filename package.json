@@ -1,0 +1,28 @@
+{
+	"name": "pub_web_pixijs-scene-change",
+	"private": true,
+	"version": "0.0.0",
+	"type": "module",
+	"engines": {
+		"node": ">=22"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"preview": "vite preview",
+		"format": "npx @biomejs/biome check --write ./src",
+		"test": "vitest"
+	},
+	"devDependencies": {
+		"@biomejs/biome": "^2.2.5",
+		"@types/node": "^24.6.2",
+		"dotenv": "^17.2.3",
+		"typescript": "^5.9.3",
+		"vite": "^7.1.9",
+		"vitest": "^3.2.4"
+	},
+	"dependencies": {
+		"gsap": "^3.13.0",
+		"pixi.js": "^8.13.2"
+	}
+}
