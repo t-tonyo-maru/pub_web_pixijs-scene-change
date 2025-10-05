@@ -36,7 +36,7 @@ const init = async () => {
   graphics.fill(0xde3249);
   container.addChild(graphics);
   // text
-  const text = new PIXI.Text({ text: 'Cotainer1' });
+  const text = new PIXI.Text({ text: 'Container1' });
   text.pivot.set(0.5);
   text.position.set(
     app.screen.width / 2 - text.width / 2,
@@ -53,7 +53,7 @@ const init = async () => {
   graphics2.fill(0x0032cf);
   container2.addChild(graphics2);
   // text
-  const text2 = new PIXI.Text({ text: 'Cotainer2' });
+  const text2 = new PIXI.Text({ text: 'Container2' });
   text2.pivot.set(0.5);
   text2.position.set(
     app.screen.width / 2 - text2.width / 2,
