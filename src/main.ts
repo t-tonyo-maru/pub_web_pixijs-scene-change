@@ -67,10 +67,12 @@ const init = async () => {
   container2.addChild(bunny);
 
   window.setTimeout(() => {
-    const timeline = gsap.timeline({ defaults: { duration: 2 } });
-    timeline.to(container2, { alpha: 0.0 }).eventCallback('onComplete', () => {
-      container2.destroy();
-    });
+    gsap
+      .timeline({ defaults: { duration: 2 } })
+      .to(container2, { alpha: 0.0 })
+      .eventCallback('onComplete', () => {
+        container2.destroy();
+      });
   }, 5 * 1000);
 };
 
